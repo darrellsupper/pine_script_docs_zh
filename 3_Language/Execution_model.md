@@ -171,7 +171,7 @@ ticker.heikinashi, ticker.kagi, ticker.new, ticker.renko, time, Timestamp, weeko
 indicator("My Script")
 va = 0.0
 for i = 1 to 2 by 1
-    如果（i + bar_index）% 2 == 0
+    if （i + bar_index）% 2 == 0
         va := ta.lowers(bar_index, 10) //每次调用时都是相同的环境。
 plot(va)
 ```
