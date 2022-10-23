@@ -153,7 +153,7 @@ plot(res, style = plot.style_histogram, color = res >= 0 ? color.red : color.blu
 
 ### Exceptions
 
-并非所有的内置函数都需要每条都执行。这些是不需要的函数，所以不需要特别处理。
+并非所有的内置函数都需要每个柱形都执行。这些是不需要的函数，所以不需要特别处理。
 
 ```
 dayofmonth, dayofweek, hour, linebreak, math.abs, math.acos, math.asin, math.atan, math.ceil,
@@ -164,7 +164,7 @@ ticker.heikinashi, ticker.kagi, ticker.new, ticker.renko, time, Timestamp, weeko
 
 注意
 
-在[for](https://www.tradingview.com/pine-script-reference/v5/#op_for)循环中调用的函数，在循环的每一次迭代中使用相同的上下文。在下面的例子中，对同一个酒吧的每个[ta.lowest()](https://www.tradingview.com/pine-script-reference/v5/#fun_ta{dot}lowest)调用都使用传递给它的值，即[bar_index](https://www.tradingview.com/pine-script-reference/v5/#var_bar_index)，所以循环中使用的函数调用不需要特殊处理。
+在[for](https://www.tradingview.com/pine-script-reference/v5/#op_for)循环中调用的函数，在循环的每一次迭代中使用相同的上下文。在下面的例子中，对同一个柱形的每个[ta.lowest()](https://www.tradingview.com/pine-script-reference/v5/#fun_ta{dot}lowest)调用都使用传递给它的值，即[bar_index](https://www.tradingview.com/pine-script-reference/v5/#var_bar_index)，所以循环中使用的函数调用不需要特殊处理。
 
 ```
 //@version=5
